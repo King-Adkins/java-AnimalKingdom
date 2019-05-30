@@ -60,7 +60,7 @@ public class Main {
 
 		//list only animals that use lungs and were named in 1758
 		System.out.println("\n*** Printing Animals that breathe with lungs & named in 1758***");
-		printAnimals(myAnimals, animal -> animal.breathe().equals("Lungs") && animal.getYearDiscovered() === 1758);
+		printAnimals(myAnimals, animal -> animal.breathe().equals("Lungs") && animal.getYearDiscovered() == 1758);
 
 		//list only animals that lay eggs and breathe using lungs
 		System.out.println("\n*** Printing Animals that lay eggs & breathe using lungs***");
@@ -69,7 +69,7 @@ public class Main {
 		//list alphabetically only those animals that were named in 1758
 		System.out.println("\n*** Printing Animals that were named in 1758 alphabetically***");
 		myAnimals.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
-		printAnimals(myAnimals, animal -> animal.getYearDiscovered() === 1758);
+		printAnimals(myAnimals, animal -> animal.getYearDiscovered() == 1758);
 
 
 	}
