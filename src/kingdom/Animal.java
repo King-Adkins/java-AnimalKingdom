@@ -12,6 +12,10 @@ public abstract class Animal {
 		this.yearDiscovered = yearDiscovered;
 	}
 
+	public String getName() {
+		return name;
+	}
+
 	public String eat() {
 		return "Eats";
 	}
